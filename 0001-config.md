@@ -208,11 +208,18 @@ Do you have a particular sequence of commands you want to repeat?  `.` repeats a
 
 This is a toy example, but observe: I copy a complex transform, then just apply it to all the lines.  In particular:
 
-`qw` (starts recording a macro to the `w` location, accessible with @w).
-{Move around and insert with `i`, `a`, `e`, etc}
-`q` (end macro)
-5@w (Do the `w` macro 5 times)
+ * `qw` (starts recording a macro to the `w` location, accessible with @w).
+ * {Move around and insert with `i`, `a`, `e`, etc}
+ * `q` (end macro)
+ * 5@w (Do the `w` macro 5 times)
+
 Boom.
+
+## Next steps
+
+Get comfortable with these navigation tools.  Write more markdown; it is what worked for me.  Based on this taste, you'll know if Vim is for you.
+
+If you like it and want to keep going, next time we'll cover basic addons and config for Python development.
 
 [1]: Git itself is outside the domain of this series, but if you are not familiar I strongly recommend you get basically a basic understanding through the tutorial [here](http://learngitbranching.js.org/).  Github also has a tutorial [here](https://try.github.io/levels/1/challenges/1).  Maybe someday I will write "Git for haters", but that day is not today.
 
