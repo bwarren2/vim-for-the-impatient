@@ -8,6 +8,8 @@ editors I have ever encountered.  My goal is twofold:
   1. to shorten the evaluation time.  I want you to hit the *informed* "I know whether I want this" point as fast as possible.
   2. to pave this very rocky road for people with a low tolerance for nonsense.
 
+The "*informed*" qualifier is important.  I think there is an unexamined middle ground between "the 5 minute intro" and "goodbye weekend"; enough time to actually understand the tool without totally drinking the kool-aid.  That is my target, which is probably a couple of hours.
+
 ## Why Bother
 
 Vim's power comes from three places: its composable command system, its configurability, and its ecosystem.

@@ -1,6 +1,8 @@
 # From 0 to Markdown
 
-We're going to start from nothing and go to using Vim as a reasonable Markdown editor.  We're actually covering a big chunk of material:
+We're going to start from nothing and go to using Vim as a reasonable Markdown editor.  In my experience, it is easiest to get used to Vim by getting to a tool I would actually use, and gluing new features to my workflow as I need them.  This will take about an hour.
+
+We're actually covering a big chunk of material:
 
 1. Basic usage
 2. Safe config
@@ -13,7 +15,7 @@ Don't get discouraged, and take breaks as needed.  This document is self-contain
 
 ## Source aside
 
-I am primarily cribbing from this [excellent guide](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/), along with these posts: [1](https://sanctum.geek.nz/arabesque/vim-anti-patterns/), [2](https://sanctum.geek.nz/arabesque/vim-misconceptions/), [3](https://sanctum.geek.nz/arabesque/vim-annoyances/) and [Gary's dotfiles](https://github.com/garybernhardt/dotfiles/blob/master/.vimrc).  However, this presentation more closely matches my journey in growing to appreciate Vim.
+I am primarily cribbing from this [excellent guide](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/), along with these posts: [1](https://sanctum.geek.nz/arabesque/vim-anti-patterns/), [2](https://sanctum.geek.nz/arabesque/vim-misconceptions/), [3](https://sanctum.geek.nz/arabesque/vim-annoyances/), [4](http://stackoverflow.com/questions/5400806/what-are-the-most-used-vim-commands-keypresses) and [Gary's dotfiles](https://github.com/garybernhardt/dotfiles/blob/master/.vimrc).  However, this presentation more closely matches my journey in growing to appreciate Vim.
 
 ## The hello-world of vim.
 
@@ -126,8 +128,71 @@ To fold or unfold particular sections, you can use `zc` (close) or `zo` (open). 
 
 We've finally set Vim up to be useful for a task I usually use Sublime for.  Here's the meat of why to vim: useful gestures.
 
-You're supposed to spend most of your time in command mode, and very little time in insert mode.  Getting around in command mode is a bit different
+You're supposed to spend most of your time in command mode, and very little time in insert mode.  Command mode offers more powerful tools for everything, including getting around.
 
+Use Vim to write some Markdown (maybe "how you feel about this process", with beginning, middle, and end sections?).  Navigate in command mode, only use insert for adding text.  Whenever you find yourself hitting h/j/k/l more than a couple of times, try a new gesture that does what you actually want.  You'll probably work your way through this list:
+
+### The most important commands:
+`u` : undo
+`ctrl+r` : redo
+
+### Speed up movement
+
+`w`/`W` : Advance to the next start of word.
+
+`e`/`E` : Advance to the next end of word.
+
+`b`/`B` : Go back to the previous start of word.
+
+Not bad.  Definitely better than mashing keys.  But what about bigger ranges?
+
+### More speed
+
+`{` : Go back one paragraph block
+
+`}` : Go forward one paragraph block
+
+`0` : go to start of line
+
+`$` : go to end of line
+
+`^` : go to first non-whitespace
+
+### Move + insert
+
+Usually once you go somewhere, you want to edit.  Some gestures move and then drop you into insert.
+
+`a` : go ahead one space and start insert mode
+
+`A` : go to the end of the line and start insert mode
+
+`o` : open a line in insert mode below where you are
+
+`O` : open a line in insert mode above where you are
+
+### Searching
+
+`/text` : search forward for "text".  Advance through the list with `n`, back with `N`.  Use `?text` to search backward.  By default, both wrap .
+
+### Delete, cut, and paste
+
+Vim doesn't actually have delete, only cut.  You get used to it.
+
+`dd` : cut line
+
+`yy` : copy line
+
+`p` : paste below
+
+`P` : paste above
+
+### Weirdness
+
+`.` : repeat last non-move command, ex "cut line".
+
+## Composable gestures
+
+Here is where things become unlike any other editor: almost every gesture in Vim is composable.  Numbers will do the command multiple times, ex `9k` is "go up 9 times". If you want to cut a word, `dw`.  Cut 15 of them: `d15w`.
 
 [1]: Git itself is outside the domain of this series, but if you are not familiar I strongly recommend you get basically a basic understanding through the tutorial [here](http://learngitbranching.js.org/).  Github also has a tutorial [here](https://try.github.io/levels/1/challenges/1).  Maybe someday I will write "Git for haters", but that day is not today.
 
