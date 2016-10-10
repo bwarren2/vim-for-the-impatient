@@ -211,7 +211,7 @@ This is a toy example, but observe: I copy a complex transform, then just apply 
  * `qw` (starts recording a macro to the `w` location, accessible with @w).
  * {Move around and insert with `i`, `a`, `e`, etc}
  * `q` (end macro)
- * 5@w (Do the `w` macro 5 times)
+ * `5@w` (Do the `w` macro 5 times)
 
 Boom.
 
