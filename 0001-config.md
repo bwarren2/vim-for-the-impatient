@@ -1,4 +1,4 @@
-# From 0 to Markdown
+# From Zero to Markdown
 
 We're going to start from nothing and go to using Vim as a reasonable Markdown editor.  In my experience, it is easiest to get used to Vim by getting to a tool I would actually use, and gluing new features to my workflow as I need them.  This will take about an hour.
 
@@ -13,7 +13,7 @@ We're actually covering a big chunk of material:
 
 Don't get discouraged, and take breaks as needed.  This document is self-contained and doesn't rely on subsequent material to teach you something useful; you are making real progress that matters.  If you play around with the final product for a while, you will begin to understand what it feels like to actually use vim.
 
-## Source aside
+## Aside: Sources
 
 I am primarily cribbing from this [excellent guide](https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/), along with these posts: [1](https://sanctum.geek.nz/arabesque/vim-anti-patterns/), [2](https://sanctum.geek.nz/arabesque/vim-misconceptions/), [3](https://sanctum.geek.nz/arabesque/vim-annoyances/), [4](http://stackoverflow.com/questions/5400806/what-are-the-most-used-vim-commands-keypresses) and [Gary's dotfiles](https://github.com/garybernhardt/dotfiles/blob/master/.vimrc).  However, this presentation more closely matches my journey in growing to appreciate Vim.
 
@@ -114,13 +114,17 @@ Add [this block](https://github.com/bwarren2/dotfiles/commit/7547dce326be4871c5e
 
 ## Colors
 
-As a demo plugin to make sure you have everything working correctly, let's change the default color scheme.  Add [these lines](https://github.com/bwarren2/dotfiles/commit/24d8f9d1e06749363b5693e30b02945e55ee16d2) in the same places, (or just paste the entire config into your config,) then install the plugins (`:PluginInstall` in command mode).  You should see an image [like this](.  Restart vim, and your colors should be different [like so]().
+As a demo plugin to make sure you have everything working correctly, let's change the default color scheme.  Add [these lines](https://github.com/bwarren2/dotfiles/commit/24d8f9d1e06749363b5693e30b02945e55ee16d2) in the same places, (or just paste the entire config into your config,) then install the plugins (`:PluginInstall` in command mode).  You should see an image like this: ![install](static/Plugin Install.png).
+
+Restart vim (`:q` all the way out and `vim`, and your colors should be different like so: ![colors](static/colors on.png).
 
 By default, vim will try to syntax highlight based on file name.  To get the full effect, make a .py file (`vim foo.py`) and write some basic python.  If it looks like this, you did it!
 
 ## Markdown Support
 
 Let's add better markdown support.  Add [these lines](https://github.com/bwarren2/dotfiles/commit/0bcc2a73c23be5f77eac4395a743bac5eac6d558) to your vimrc, install the plugins, and restart.  If you create a markdown file (`vim foo.md`) and start typing, you should now have spelling/grammar checking and some header highlighting.  Additionally, you can skip between headers; `[[` and `]]` in command mode jump between headers, as in this gif:
+
+![Demo](static/out.gif)
 
 To fold or unfold particular sections, you can use `zc` (close) or `zo` (open).  Folding is a feature for later we will probably remap; see that it is neat, but probably ignore it.
 
