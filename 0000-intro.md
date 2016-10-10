@@ -65,8 +65,7 @@ Vim's potential control surface (think rocket dashboard) is tremendously
 complicated, which means really small errors can produce wildly wrong results.
 For example, `k` is up.  But `K` is "shell out to `man` and try to get guidance
 for things under your cursor," which looks like total system failure when it
-surprises you.  (Which it easily might if you, for example, actually tap the
-capslock key.)
+surprises you.  (Which it easily might if you, for example, accidentally tap the capslock key.)
 
 #### The Solution
 
@@ -83,7 +82,7 @@ Some things, like Zelda games, are _extremely_ well designed to provide
 continual feelings of progress and control.  Vim can be the total opposite
 of that.  Landmines can breed a sense of helplessness/lack of control, as things blow up for unknown/seemingly irrational reasons, while tinkerers might gaslight you ("there are no problems at all!") or worse: blame you, the novice.
 
-When I first heard of Vim, I dreaded its configurability as a potential fountain of frustration.  If I have to choose my keybindings myself, I am much more likely to choose badly (in a way that conflicts with some useful tool I "should have known" I would need to use/account for).  Giving voice to a feeling: "The best I can do choosing as a novice is match someone choosing as an expert, so why not just config the expert's advice by default?  Maybe I should go back to Sublime, which doesn't so obviously hate me."
+When I first heard of Vim, I dreaded its configurability as a potential fountain of frustration.  If I have to choose my keybindings myself, I am much more likely to choose badly (in a way that conflicts with some useful tool I "should have known" I would need to use/account for).  Giving voice to a feeling: "The best I can do choosing as a novice is match someone choosing as an expert, so why not just config the expert's advice by default?  Maybe I should go back to Sublime, which doesn't so obviously detest me."
 
 This series is an attempt to mitigate this problem.  As I swing my machete through the thicket of Vim's problems, I'll try to leave behind a saner path for you.  Remember when you first really understood what Minecraft was all about?  That is the feeling we are going for here.
 
