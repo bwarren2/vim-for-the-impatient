@@ -138,6 +138,7 @@ Use Vim to write some Markdown (maybe "how you feel about this process", with be
 
 ### The most important commands:
 `u` : undo
+
 `ctrl+r` : redo
 
 ### Speed up movement
