@@ -116,7 +116,7 @@ Add [this block](https://github.com/bwarren2/dotfiles/commit/7547dce326be4871c5e
 
 As a demo plugin to make sure you have everything working correctly, let's change the default color scheme.  Add [these lines](https://github.com/bwarren2/dotfiles/commit/24d8f9d1e06749363b5693e30b02945e55ee16d2) in the same places, (or just paste the entire config into your config,) then install the plugins (`:PluginInstall` in command mode).  You should see an image like this: ![install](static/Plugin Install.png).
 
-Restart vim (`:q` all the way out and `vim`, and your colors should be different like so: ![colors](static/colors on.png).
+Restart vim (`:q` all the way out and `vim`), and your colors should be different like so: ![colors](static/colors on.png).
 
 By default, vim will try to syntax highlight based on file name.  To get the full effect, make a .py file (`vim foo.py`) and write some basic python.  If it looks like this, you did it!
 
@@ -134,7 +134,7 @@ We've finally set Vim up to be useful for a task I usually use Sublime for.  Her
 
 You're supposed to spend most of your time in command mode, and very little time in insert mode.  Command mode offers more powerful tools for everything, including getting around.
 
-Use Vim to write some Markdown (maybe "how you feel about this process", with beginning, middle, and end sections?).  Navigate in command mode, only use insert for adding text.  Whenever you find yourself hitting h/j/k/l more than a couple of times, try a new gesture that does what you actually want.  You'll probably work your way through this list:
+Use Vim to write some Markdown (maybe "how you feel about this process", with beginning, middle, and end sections?).  Navigate in command mode, only use insert for adding text.  Whenever you find yourself hitting any key, ex h/j/k/l, more than a couple of times, try a new gesture that does what you actually want.  You'll probably work your way through this list:
 
 ### The most important commands:
 `u` : undo
@@ -142,19 +142,19 @@ Use Vim to write some Markdown (maybe "how you feel about this process", with be
 
 ### Speed up movement
 
-`w`/`W` : Advance to the next start of word.
+`w`/`W` : advance to the next start of word
 
-`e`/`E` : Advance to the next end of word.
+`e`/`E` : advance to the next end of word
 
-`b`/`B` : Go back to the previous start of word.
+`b`/`B` : go back to the previous start of word
 
 Not bad.  Definitely better than mashing keys.  But what about bigger ranges?
 
 ### More speed
 
-`{` : Go back one paragraph block
+`{` : go back one paragraph block
 
-`}` : Go forward one paragraph block
+`}` : go forward one paragraph block
 
 `0` : go to start of line
 
@@ -190,9 +190,11 @@ Vim doesn't actually have delete, only cut.  You get used to it.
 
 `P` : paste above
 
-### Weirdness
+### Useful, looks weird
 
 `.` : repeat last non-move command, ex "cut line".
+
+**Remember: find the need for a thing in your workflow, then look it up and start using it.  This promotes feelings of accomplishment, because you have a problem, then solve it.**
 
 ## Composable gestures
 
