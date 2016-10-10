@@ -221,7 +221,7 @@ Get comfortable with these navigation tools.  Write more markdown; it is what wo
 
 If you like it and want to keep going, next time we'll cover basic addons and config for Python development.
 
-[1]: Git itself is outside the domain of this series, but if you are not familiar I strongly recommend you get basically a basic understanding through the tutorial [here](http://learngitbranching.js.org/).  Github also has a tutorial [here](https://try.github.io/levels/1/challenges/1).  Maybe someday I will write "Git for haters", but that day is not today.
+[1]: Git itself is outside the domain of this series, but if you are not familiar I strongly recommend you get basically a basic understanding through the tutorial [here](http://learngitbranching.js.org/).  Github also has a tutorial [here](https://try.github.io/levels/1/challenges/1).  Maybe someday I will write "Git for the impatient", but that day is not today.
 
 [2]: Letter case sometimes changes Vim's behavior a little, other times completely.  (For example, `k` is the super-common "move cursor up", but `K` is "shell out to man {X} for X=whatever your cursor was just on", which is usually pointless and can be totally bewildering when you stumble on it.)
 
